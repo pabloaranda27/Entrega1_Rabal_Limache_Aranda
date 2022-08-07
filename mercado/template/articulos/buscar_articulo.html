@@ -1,0 +1,22 @@
+{% extends 'padre.html' %}
+
+{% block titulo %}
+Busqueda de Articulo
+{% endblock %}
+
+{% block cambiante %}
+
+  {% for article in articles %}
+    <div class="card" style="width: 18rem;">
+        <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Articulos</h5>
+          <p class="card-text"><h4>Articulo: {{article.name}}</h4></p>
+          <p><h5>Precio: {{article.price}}</h5></p>
+          <p><h5>Stock: {{article.stock}}</h5></p>      
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    {% endfor %}
+
+{% endblock %}
