@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.urls import path
 
 from articulos.views import nuevo_articulo, buscar_articulo, lista_articulos

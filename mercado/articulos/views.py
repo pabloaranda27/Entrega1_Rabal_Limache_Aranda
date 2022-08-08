@@ -13,7 +13,6 @@ def nuevo_articulo(request):
                 stock=form.cleaned_data['stock'],
             )
             return redirect(lista_articulos)
-
     elif request.method == 'GET':
         form=Form_articles()
         context={'form':form}
