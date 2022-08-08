@@ -7,16 +7,15 @@ Lista de Articulos
 {% block cambiante %}
 
   {% for article in articles %}
-    <div class="card" style="width: 18rem;">
-        <img src="https://i0.wp.com/edtechreviews.net/wp-content/uploads/2021/12/coderhouse_logo.png?resize=750%2C750&ssl=1" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Articulos</h5>
-          <p class="card-text"><h4>Articulo: {{article.name}}</h4></p>
-          <p><h5>Precio: {{article.price}}</h5></p>
-          <p><h5>Stock: {{article.stock}}</h5></p>      
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card text-white bg-success mb-3" style="width: 18rem; padding: 15px; float: left; margin: 10px 20px;">
+        <img src="#" class="card-img-top" alt="Imagen del almacen">
+        <div class="card-body" style="background-color: rgb(133, 255, 174); color:rgb(3, 70, 3); font-family: Georgia, 'Times New Roman', Times, serif;">
+          <p class="card-text" style="text-align: center;"><h5>{{article.name}}</h5></p>
+          <p><h6>Precio: $ {{article.price}}</h6></p>
+          <p><h6>Stock: {{article.stock}} unidades</h6></p>      
+          <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-      </div> -->
+      </div>
   {% endfor %}
 
 {% endblock %}

@@ -1,7 +1,8 @@
+from distutils.command.upload import upload
 from django.db import models
 
 class Articles(models.Model):
-    name=models.CharField(max_length=40)
+    name=models.CharField(max_length=30)
     price=models.FloatField()
     description=models.CharField(max_length=200, null=True, blank=True)
     is_available=models.BooleanField(default=True)
