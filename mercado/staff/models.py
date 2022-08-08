@@ -9,7 +9,6 @@ class Staff(models.Model):
     date_of_hired=models.DateField(auto_now_add=True, null=True, blank=True)
     age=models.IntegerField()
 
-
     def __str__(self):
         return self.name
     
