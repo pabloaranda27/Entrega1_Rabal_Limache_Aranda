@@ -1,0 +1,23 @@
+{% extends 'padre.html' %}
+
+{% block titulo %}
+Nueva Sucursal
+{% endblock %}
+
+{% block cambiante %}
+
+<form action="" method="POST">
+
+  {% csrf_token %}
+
+  <table style="margin:10px 0 0 20px; padding: 1.2em;">
+
+    {{ form.as_table }}
+
+  </table>
+  
+  <p style="margin: 10px 0 0 20px;"><input type="submit" value="Crear sucursal"></p>
+
+</form>
+  
+{% endblock %}
