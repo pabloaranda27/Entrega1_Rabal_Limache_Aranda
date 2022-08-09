@@ -32,9 +32,9 @@ En esta parte nos encontramos con un menu desplegable que lleva a tres botones:
 
 - Nueva Sucursal: Utilizando este boton podemos crear una nueva sucursal a partir de un formulario.
 
-- Nuevo Personal: Este boton lo utilizamos crear una nueva sucursal a partir de un formulario. 
+- Nuevo Personal: Este boton lo utilizamos para incorporar nuevo personal en la base de datos a partir de un formulario. 
 
-- Nuevo Articulo: Este boton lo utilizamos crear una nueva sucursal a partir de un formulario. 
+- Nuevo Articulo: En este caso, podemos crear nuevos articulos a partir de un formulario. 
 
 ### Buscar:
 
