@@ -27,16 +27,22 @@
             <a class="nav-link" href="/articulos/lista-articulos/">Articulos</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/articulos/nuevo-articulo/">Nuevo Articulo</a>
-          </li>
-          <li class="nav-item active">
             <a class="nav-link" href="/staff/lista-personal/">Personal</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/staff/nuevo-personal/">Nuevo Personal</a>
+            <a class="nav-link" href="/sucursales/lista-sucursales/">Sucursales</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sucursales</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Crear
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/sucursales/nueva-sucursal/">Nueva Sucursal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/staff/nuevo-personal/">Nuevo Personal</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/articulos/nuevo-articulo/">Nuevo Articulo</a>
+            </div>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/articulos/buscar-articulo/" method="GET">
